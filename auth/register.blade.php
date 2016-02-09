@@ -21,8 +21,8 @@
 						{{ Form::text('email_id','',array('placeholder'=>'Email-Id','class'=>'form-control',Input::old('email_id')))}} <br>
 						{{ Form::password('password',array('placeholder'=>'Password','class'=>'form-control'))}} <br>
 						{{ Form::password('password_confirmation', array('class'=>'form-control', 'placeholder'=>'Confirm Password')) }} <br>
-						{{ Form::submit('Register',array('class'=>'btn btn-success'))}}
-						{{ HTML::link('/welcome','CANCEL',array('class'=>'btn btn-danger')) }}
+						{{ Form::submit('Sign-Up',array('class'=>'btn btn-success'))}}
+						&nbsp;&nbsp;{{ HTML::link('/welcome','Cancel',array('class'=>'btn btn-danger')) }}
 						{{ Form::close() }}
 
 					</div>			

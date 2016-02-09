@@ -15,11 +15,11 @@
     }
   </style>
 @section('content')
-
+      
   <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jumbotron" id="banner">
         <div class="text-center" id="banner-text">
-          <img src="img/logo256.png" alt="Logo" href="/"><br /> <br/> <br />
+          <a href="/welcome"><img src="img/logo256.png" alt="Logo" href="/"><a><br /> <br/> <br />
           <a href="#" style="border:solid 2px black; padding:15px; color:black;">KNOW MORE</a>
         </div>  
   </div>
@@ -82,4 +82,5 @@
             </div>
         </div> 
      </div>
+   </div>
 @endsection
