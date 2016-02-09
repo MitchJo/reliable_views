@@ -7,7 +7,7 @@
 {{HTML::script('js/re.js')}}
 
 <div class="container">
-	<div class="col-md-12">
+	<div class="col-md-5 col-md-offset-2">
 		@if(Session::has('message'))
 			<p class="alert alert-success">{{Session::get('message')}}</p>
 		@endif
@@ -18,9 +18,17 @@
 			<div class="well">
 				<legend>Enquire</legend>
 				{{Form::open(array('url'=>'/contacts/sendmsg'))}}
-
+					@if(Session::has('error'))
+						<ul style="color:red">
+							@foreach($errors->all() as $error)
+								<li >{{ $error }}</li>
+							@endforeach
+						</ul>
+					@endif
+					<br>
 				{{Form::text('email_id','',array('placeholder'=>'Email-id','class'=>'form-control'))}} <br>
 				{{Form::text('subject','',array('placeholder'=>'Subject','class'=>'form-control'))}} <br>
+
 				{{Form::textarea('enquiry_msg','',array('placeholder'=>'Type in message','class'=>'form-control'))}} <br>
 				{{Form::submit('Send',array('class'=>'btn btn-success'))}}
 				{{Form::close()}}
@@ -40,7 +48,7 @@
 			</p>
 		</div>
 		<div class="col-md-3">
-			<div id="googleMap" style="height:350px"></div>
+			<div id="googleMap" style="height:370px"></div>
 		</div>
 	
 </div>
