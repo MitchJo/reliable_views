@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     
     {{ HTML::script('js/jquery.min.js') }}
-    {{ HTML::script('js/bootstrap.min.js')}}
-    {{ HTML::script('js/re.js')}}
+    <!--{{ HTML::script('js/bootstrap.min.js')}}-->
     {{ HTML::style('css/bootstrap.min.css') }}
+
     <style>
         #foot{
             background:#000;

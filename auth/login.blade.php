@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-	<div id="myModal" class="modal fade" role="dialog">
+		<div id="myModal" class="modal fade" role="dialog">
           <div class="modal-dialog modal-sm">
             <div class="modal-body">
                 @if(Session::has('message'))

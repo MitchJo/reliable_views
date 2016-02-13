@@ -13,6 +13,7 @@
 		@endif
 	</div>
 </div>
+
 <div class="container">
 	   <div class="col-md-5 col-md-offset-2">
 			<div class="well">
@@ -47,6 +48,8 @@
 				</p>
 			</p>
 		</div>
+
+		<!--maps-->
 		<div class="col-md-3">
 			<div id="googleMap" style="height:370px"></div>
 		</div>
@@ -54,6 +57,6 @@
 </div>
 
 
-<!--maps-->
+
 
 @endsection
